@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ALTERNATIVE LANGUAGES -->
+    <link rel="alternate" hreflang="pt-BR" href="index.html">
+    <link rel="alternate" hreflang="en-US" href="index-en.html">
+    <link rel="alternate" hreflang="es-MX" href="index-es.html">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="style/scss/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="img/iconbolo.png" type="image/x-icon">
+    <title>Online Store PanCakes</title>
+</head>
+
+<body>
+    <!-- INÍCIO DA HEADER -->
+    <nav class="navbar navbar-fixed-top navbar-expand-md navbar-light" style="background-color: #F8CECC;">
+        <div class="container" style="flex-direction: column;">
+            <div class="container-fluid" style="flex-direction: row;">
+                <a class="navbar-brand" href="index-en.html">
+                    <img src="img/PanCakes.png" alt="logo panCakes"
+                        style="width: 160px; height: 100px; margin-left: 15px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar nav ml-auto">
+                        <li class="nav item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#siteModal"><img src="img/user-2.png" alt="icon user"
+                                    style="width: 16px;height: 16px;"> Login/Sign up</a>
+                        </li>
+                        <li class="nav item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#carrinhoModal"><img src="img/carrinho.png" alt="icon user"
+                                    style="width: 16px;height: 16px;"> 0 - R$0,00</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop"> <img
+                                    src="img/internet.png" alt="icon user" style="width: 16px;height: 16px;">
+                                Language</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index-br.html"> <img src="img/brazil.svg" alt="brazil flag"
+                                        style="width: 16px;height: 16px;"> pt-br</a>
+                                <a class="dropdown-item" href="index-en.html"><img src="img/united-states.svg" alt="us flag"
+                                        style="width: 16px;height: 16px;"> en-us</a>
+                                <a class="dropdown-item" href="index-es.html"><img src="img/mexico.svg" alt="mexico flag"
+                                        style="width: 16px;height: 16px;"> es-mx</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar  nav mr-auto">
+                        <li class="nav item active">
+                            <a class="nav-link" href="index-en.html">Home</a>
+                        </li>
+                        <li class="nav item">
+                            <a class="nav-link" href="#prod">Products</a>
+                        </li>
+                        <li class="nav item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav item">
+                            <a class="nav-link" href="#about-us">About us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input type="text" class="form-control mr-2" type="search" placeholder="Search...">
+                        <button class="btn btn-light" type="submit">
+                            <img src="img/search.png" alt="icon pesquisa" width="18px" height="18px">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM DA HEADER -->
+    <!-- CARROSSEL PRINCIPAL -->
+    <div class="container" style="margin-top: 90px; margin-bottom: 90px;">
+        <div id="carouselSlide" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselSlide" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselSlide" data-slide-to="1"></li>
+                <li data-target="#carouselSlide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner-1.jpg" class="d-block w-100"
+                        alt="bolo de chocolate com cobertura de baunilha cortado">
+                    <div class="carousel-caption d-none d-md-block"
+                        style="background: black; opacity: 65%; border-radius: 10px;">
+                        <h3 style="font-size: 30px;">Welcome to PanCakes!</h3>
+                        <h3 style="font-size: 25px;"> For YOU who's thinking way too much in politics, I wanna say that our groceries are a great campaign!</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block"
+                        style="background: black; opacity: 65%; border-radius: 10px;">
+                        <h3 style="font-size: 25px;">Money cannot buy happiness, but it buys cake.</h3>
+                        <h3 style="font-size: 25px;">Have you ever seen someone sad while eating CAKE?</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block"
+                        style="background: black; opacity: 65%; border-radius: 10px;">
+                        <h3 style="font-size: 25px;">Do not put off for tomorrow what you can eat today!</h3>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- FIM DO CARROSSEL PRINCIPAL -->
+    <!-- INÍCIO DO CARROSSEL DE PRODUTOS -->
+    <div class="container" id="prod" style="margin-top: 90px; margin-bottom: 90px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="produtos"><b>Featured</b> Products</h1>
+                    <div id="myCarousel" class="carousel--dois slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators" id="indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item-dois active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/cupcake.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">Sweet Pride</h4>
+                                                <p class="item-price"><strike>R$10,00</strike> <span>R$7,00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/Back and Forth.jpeg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">Back and Forth</h4>
+                                                <p class="item-price"><strike>R$25,00</strike> <span>R$15,99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/StrawTasty.jpeg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">StrawTasty</h4>
+                                                <p class="item-price"><strike>R$18,00</strike> <span>R$11,99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/Blue Goodbyes.jpeg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">Blue Goodbyes</h4>
+                                                <p class="item-price"><strike>R$15,00</strike> <span>R$9,99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="img/" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">BoliBoli</h4>
+                                                <p class="item-price"><strike>R$25,00</strike> <span>R$13,99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/macbook-pro.jpg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">Bifesta</h4>
+                                                <p class="item-price"><strike>R$20,00</strike> <span>R$12,99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/speaker.jpg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">Pan Da</h4>
+                                                <p class="item-price"><strike>R$7,00</strike> <span>R$5,00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="/examples/images/products/galaxy.jpg" class="img-fluid"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4 id="prod-name">My Boo</h4>
+                                                <p class="item-price"><strike>R$16,00</strike> <span>R$9,00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button class="btn" type="button"
+                                                    style="background-color: black; color: #F8CECC;">Add to cart</button>
+                                                <a href="" class="btn btn-outline-danger btn-sm"><i
+                                                        class="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" id="three" href="#myCarousel" role="button" data-slide="prev">
+                        <img src="img/baseline_arrow_back_ios_new_black_18dp.png" alt="indicador - anterior">
+                        <span class="sr-only">Anteiror</span>
+                    </a>
+                    <a class="carousel-control-next" id="fourr" href="#myCarousel" role="button" data-slide="next">
+                        <img src="img/baseline_arrow_forward_ios_black_18dp.png" alt="indicador - anterior">
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- FIM DO CARROSSEL DE PRODUTOS -->
+    <!-- SOBRE NÓS -->
+    <div class="container" id="about-us">
+        <div class="row" style="margin-bottom: 90px;">
+            <div class="col-12 text-center">
+                <h1 id="about">About us</h1>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-3">
+                <nav id="navbarVertical" class="navbar" style="background: #F8CECC; border-radius: 15px;">
+                    <nav class="nav nav-pills flex-column">
+                        <a href="#item1" class="nav-link" style="color: black;">Know what we support</a>
+                        <a href="#item2" class="nav-link" style="color: black;">Meet our team</a>
+                    </nav>
+                </nav>
+            </div>
+            <div class="col-9">
+                <div data-spy="scroll" data-target="navbarVertical" data-offset="0" class="scrollspySite"
+                    style="position: relative; overflow: auto; height: 380px;">
+                    <h4 id="item1">Know what we support</h4>
+                    <p> Our society has been undergoing major changes, but it's still not safe and fair for everyone.
+                        We fight for causes that will improve the life quality of the beings on our planet.</p>
+                    <p> PanCakes is committed to the environment, keeping good and sustainable practices.
+                        We'll use biodegradable materials that harm nature the less as possible, in addition to encouraging
+                        other companies and customers, with our services and support, to adhere to these habits.</p>
+                    <p> People have the right to love whomever they want, it's not a genre that will invalidate that feeling.
+                        Love is very complex for our understanding and impossible to summarize or limit.
+                        There is no point in restricting or belittling someone for their sexual orientation or gender to which they identify.</p>
+                    <p>We are made of details and that's what makes us special. We were born completely different from each other and
+                        as we grow up, we develop characteristics and skills that can turn our natural spotlight.
+                        Limiting someone's abilities by their color / race or their gender only brings up the realization that perhaps
+                        we are not as evolved as we think.</p>
+                    <h4 id="item2">Meet our team</h4>
+                    <p> We are a micro-company. Until now, PanCakes has only five members on its team.
+                        The subgroups are divided into: development team, marketing team and financial management.</p>
+                    <p> <b>Eloisa Raquel.</b> 18 years old. Chief Marketing Officer (CMO) and participant in the financial management team. Gentle
+                        and charismatic, always open to new ideas and plans. She likes to be ahead of her competition.<br>
+                        <b>Gabriel Valente.</b> n years old. Chief Information Officer (CIO) and participant in the financial management team. 
+                        Dedicated and he's great at what he does. <br>
+                        <b>Isabele Amaro.</b> 18 years old. Chief Technology Officer (CTO), and participant in the development team. 
+                        Always addresses new technologies for the company. Thirsty for knowledge.<br>
+                        <b>Laís Muniz.</b> 18 years old. Chief Executive Officer (CEO), Security Officer (CSO) and Design Officer (CDO). 
+                        Always searching to serve the company and customers the best she can.<br>
+                        <b>Samirah de Souza.</b> n years old. Chief Financial Officer (CFO) and participant in the marketing team. He likes to 
+                        innovate and be on top of everything.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5 mb-4" style="border-top: 2px dashed black; border-bottom: 2px dashed black;">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card rounded shadow-sm border-0 h-100" style="background: transparent;">
+                    <div class="card-body p-4 text-center">
+                        <img src="img/eco-friendly.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5><b>Sustainability</b></h5>
+                        <p class="medium">We use biodegradables materials. Sustainability is our priority.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card rounded shadow-sm border-0 h-100" style="background: transparent;">
+                    <div class="card-body p-4 text-center">
+                        <img src="img/bandeira pan coração.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5><b>LGBTQIA+</b></h5>
+                        <p class="medium">Every kind of love is valid. Spread love is our mission.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card rounded shadow-sm border-0 h-100" style="background: transparent;">
+                    <div class="card-body p-4 text-center">
+                        <img src="img/black-lives-matter-png-1.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5><b>Black Lives Matter</b></h5>
+                        <p class="medium">For George Floyd, Ághata, João Pedro and so many others.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card rounded shadow-sm border-0 h-100" style="background: transparent;">
+                    <div class="card-body p-4 text-center">
+                        <img src="img/feminismo.png" alt="" class="img-fluid d-block mx-auto mb-3">
+                        <h5><b>Feminism</b></h5>
+                        <p class="medium">Justice and equality for women. Everyone is capable, the sky is our limit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO SOBRE NÓS-->
+    <!-- FOOTER -->
+    <footer class="text-center text-black" id="contact">
+        <div class="container p-4" style="padding-bottom: 0 !important;">
+            <section class="mb-4">
+                <!-- Whatsapp -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-whatsapp"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/pancakes_2021/?igshid=1gt1x35ybre9j" role="button"><i
+                        class="fa fa-instagram"></i></a>
+                <!-- Github -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/UNHAPPYE/PanCakes" role="button"><i
+                        class="fa fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Form -->
+            <section>
+                <form>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our news</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" placeholder="Email address" />
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-dark mb-4">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <div class="row" style="align-items: center; justify-content: center;">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5><b>Call center</b></h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-black">pancakes4life@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">(61) 4002-8922</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-black">Business hours: 6am - 9pm | Mon to sat.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <img src="img/panda 2.png" alt="panda" width="190px" height="180px">
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5><b>Payment methods</b></h5>
+                        <img src="img/forma de pagamento.png" alt="forma de pagamento" width="160px" height="90px">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-black" href="#">PanCakes</a>
+        </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+    <!-- MODAL LOGIN/CADASTRO -->
+    <div class="modal" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login or Sign up</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>x</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>nhonhonho</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO MODAL -->
+    <!-- MODAL CARRINHO -->
+    <div class="modal" id="carrinhoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping cart</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>x</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="color: gray;">No items added to cart</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO MODAL -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
+
+    <script src="js/javava.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
